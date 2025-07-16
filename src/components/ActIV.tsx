@@ -123,32 +123,6 @@ const ActIV: React.FC = () => {
           </p>
         </div>
 
-        {/* Photography Gallery */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold mb-10 bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent text-center">
-            📷 Personal Photography
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {photography.map((item, idx) => (
-              <div key={idx} className="group relative overflow-hidden rounded-2xl backdrop-blur-lg bg-gradient-to-br from-black/40 to-gray-900/40 border border-cyan-400/20 hover:border-cyan-500/50 transition-all duration-500 transform hover:scale-105">
-                <div className="relative">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                    <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-gray-300 italic mb-4">{item.description}</p>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Section 1: Experience Timeline */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent text-center">
