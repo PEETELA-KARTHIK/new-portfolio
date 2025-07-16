@@ -11,7 +11,8 @@ const ActIII: React.FC = () => {
       icon: <Shield className="w-8 h-8" />,
       color: "from-red-400 to-pink-400",
       metrics: "95% Accuracy",
-      codeUrl: "https://github.com/PEETELA-KARTHIK/Criminal-Detection-System"
+      codeUrl: "https://github.com/PEETELA-KARTHIK/Criminal-Detection-System",
+      demoUrl: "https://photos.app.goo.gl/GG41JhxycK9x7kWf9"
     },
     {
       title: "E-Justice: Digital Courtroom",
@@ -94,10 +95,22 @@ const ActIII: React.FC = () => {
 
                 {/* Actions */}
                 <div className="flex space-x-4">
-                  <button className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105">
-                    <Eye size={16} />
-                    <span>Demo</span>
-                  </button>
+                  {project.demoUrl ? (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105"
+                    >
+                      <Eye size={16} />
+                      <span>Demo</span>
+                    </a>
+                  ) : (
+                    <button className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg opacity-50 cursor-not-allowed">
+                      <Eye size={16} />
+                      <span>Demo</span>
+                    </button>
+                  )}
                   <a
                     href={project.codeUrl}
                     target="_blank"
