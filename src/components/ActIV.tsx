@@ -6,8 +6,8 @@ const ActIV: React.FC = () => {
 
   const tabs = [
     { id: 'photography', label: 'Photography', icon: <Camera className="w-5 h-5" /> },
-    { id: 'videos', label: 'Videos', icon: <Video className="w-5 h-5" /> },
-    { id: 'designs', label: 'Designs', icon: <Palette className="w-5 h-5" /> }
+    { id: 'certifications', label: 'Certifications', icon: <Video className="w-5 h-5" /> },
+    { id: 'experiences', label: 'Experiences', icon: <Palette className="w-5 h-5" /> }
   ];
 
   const galleryItems = {
@@ -31,9 +31,9 @@ const ActIV: React.FC = () => {
         category: "cityscape"
       },
       {
-        title: "Code & Coffee",
+        title: "SUnset",
         description: "The perfect blend",
-        image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: "https://photos.app.goo.gl/7PNaBzXCgEBnzqRq9",
         category: "lifestyle"
       },
       {
@@ -49,44 +49,44 @@ const ActIV: React.FC = () => {
         category: "landscape"
       }
     ],
-    videos: [
+    certifications: [
       {
-        title: "College Chronicles",
-        description: "50+ stories told through lens",
+        title: "Cisco Certified Network Associate (CCNA)",
+        description: "Credential in networking fundamentals, security, and automation.",
         image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
-        category: "documentary"
+        category: "networking"
       },
       {
-        title: "Tech Talks",
-        description: "Capturing innovation",
+        title: "Python for Everybody (Coursera)",
+        description: "Completed specialization in Python programming.",
         image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
-        category: "educational"
+        category: "python"
       },
       {
-        title: "Event Highlights",
-        description: "Moments that matter",
+        title: "AI & ML Bootcamp",
+        description: "Hands-on training in artificial intelligence and machine learning.",
         image: "https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800",
-        category: "events"
+        category: "ai"
       }
     ],
-    designs: [
+    experiences: [
       {
-        title: "UI Dreams",
-        description: "Interfaces that inspire",
-        image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800",
-        category: "ui"
-      },
-      {
-        title: "Brand Identity",
-        description: "Visual storytelling",
-        image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
-        category: "branding"
-      },
-      {
-        title: "Digital Art",
-        description: "Pixels as paint",
+        title: "Web Developer Intern - Tech Solutions",
+        description: "Developed and maintained web applications using React and Node.js.",
         image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
-        category: "art"
+        category: "internship"
+      },
+      {
+        title: "AI Research Assistant - University Lab",
+        description: "Worked on computer vision and NLP projects for academic research.",
+        image: "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=800",
+        category: "research"
+      },
+      {
+        title: "Event Organizer - Coding Club",
+        description: "Organized hackathons and coding competitions for students.",
+        image: "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=800",
+        category: "leadership"
       }
     ]
   };
@@ -170,12 +170,12 @@ const ActIV: React.FC = () => {
             <div className="text-gray-300">Photos Captured</div>
           </div>
           <div className="text-center glass-card p-6 rounded-xl backdrop-blur-lg bg-gradient-to-br from-black/40 to-gray-900/40 border border-gray-700/50">
-            <div className="text-3xl font-bold text-purple-400 mb-2">50+</div>
-            <div className="text-gray-300">Videos Edited</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">5+</div>
+            <div className="text-gray-300">Certifications Earned</div>
           </div>
           <div className="text-center glass-card p-6 rounded-xl backdrop-blur-lg bg-gradient-to-br from-black/40 to-gray-900/40 border border-gray-700/50">
-            <div className="text-3xl font-bold text-pink-400 mb-2">25+</div>
-            <div className="text-gray-300">Designs Created</div>
+            <div className="text-3xl font-bold text-pink-400 mb-2">3+</div>
+            <div className="text-gray-300">Experiences Gained</div>
           </div>
         </div>
       </div>
