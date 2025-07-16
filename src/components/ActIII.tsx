@@ -10,7 +10,8 @@ const ActIII: React.FC = () => {
       techStack: ["Python", "OpenCV", "Machine Learning", "Computer Vision"],
       icon: <Shield className="w-8 h-8" />,
       color: "from-red-400 to-pink-400",
-      metrics: "95% Accuracy"
+      metrics: "95% Accuracy",
+      codeUrl: "https://github.com/PEETELA-KARTHIK/Criminal-Detection-System"
     },
     {
       title: "E-Justice: Digital Courtroom",
@@ -19,7 +20,8 @@ const ActIII: React.FC = () => {
       techStack: ["MongoDB", "React", "Node.js", "Express", "Role-based Auth"],
       icon: <Scale className="w-8 h-8" />,
       color: "from-blue-400 to-cyan-400",
-      metrics: "Multi-Role System"
+      metrics: "Multi-Role System",
+      codeUrl: "https://github.com/PEETELA-KARTHIK/E-Justice"
     },
     {
       title: "Sign Language Conversation System",
@@ -28,7 +30,8 @@ const ActIII: React.FC = () => {
       techStack: ["TensorFlow", "Computer Vision", "Python", "Real-time Processing"],
       icon: <MessageCircle className="w-8 h-8" />,
       color: "from-green-400 to-teal-400",
-      metrics: "90% Accuracy"
+      metrics: "90% Accuracy",
+      codeUrl: "https://github.com/PEETELA-KARTHIK/Real-Time-Sign-Language-Generation-from-Spoken-Language"
     }
   ];
 
@@ -95,10 +98,15 @@ const ActIII: React.FC = () => {
                     <Eye size={16} />
                     <span>Demo</span>
                   </button>
-                  <button className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-lg hover:from-gray-600 hover:to-gray-700 transition-all duration-300 transform hover:scale-105">
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-lg hover:from-gray-600 hover:to-gray-700 transition-all duration-300 transform hover:scale-105"
+                  >
                     <Github size={16} />
                     <span>Code</span>
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -117,10 +125,15 @@ const ActIII: React.FC = () => {
             <p className="text-gray-300 mb-6">
               Each project is a chapter in an ongoing story. The repository holds more secrets, more dreams awaiting their digital birth.
             </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto">
+            <a
+              href="https://github.com/PEETELA-KARTHIK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 flex items-center mx-auto"
+            >
               <ExternalLink className="mr-2" size={18} />
               Explore Full Repository
-            </button>
+            </a>
           </div>
         </div>
       </div>

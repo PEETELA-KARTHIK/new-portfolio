@@ -30,10 +30,8 @@ const ActV: React.FC = () => {
   };
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: '#', label: 'GitHub', color: 'hover:text-white' },
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter', color: 'hover:text-cyan-400' },
-    { icon: <Instagram size={20} />, href: '#', label: 'Instagram', color: 'hover:text-pink-400' }
+    { icon: <Github size={20} />, href: 'https://github.com/PEETELA-KARTHIK', label: 'GitHub', color: 'hover:text-white' },
+    { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/in/peetela-karthik', label: 'LinkedIn', color: 'hover:text-blue-400' }
   ];
 
   return (
